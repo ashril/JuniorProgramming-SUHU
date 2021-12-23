@@ -1,0 +1,229 @@
+#eks-id {
+    color: blue;
+}
+
+.eks-class {
+    color: yellow;
+}
+
+p.color-green {
+    color: green;
+}
+
+p#color-red {
+    color: red;
+}
+
+div.opacity1{
+    background-color: green;
+    opacity: 0.3;
+}
+
+div.opacity2{
+    background-color: green;
+    opacity: 0.7;
+}
+
+div.background-alpha{
+    background-color: rgb(10, 241, 10);
+}
+
+div.short-declaration {
+    background: no-repeat fixed blanchedalmond;
+    margin-right: 200px;
+}
+
+div.long-declaration {
+    background-image: url("https://rekreartive.com/wp-content/uploads/2018/11/Logo-UIN-Mataram-Universitas-Islam-Negeri-Mataram-1140x1140.png");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-attachment: fixed;
+    background-color: blanchedalmond;
+    margin-right: 200px;
+}
+
+div.margin {
+    border: 1px solid red;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.margin-inherit {
+    margin-left: inherit;
+}
+
+div.no-box {
+    margin-left: 50px;
+    width: 300px;
+    background-color: yellow;
+}
+
+div.with-box {
+    margin-left: 50px;
+    width: 300px;
+    padding: 50px;
+    box-sizing  : border-box; 
+    /* box-sizing ini mengejar width yang sudah ditentukan, kl ndk ada, padding jadi nambah ke luar */
+    background-color: yellow;
+}
+
+div.with-box-caption {
+    margin-left: 50px;
+    width: 300px;
+    padding: 5px;
+    box-sizing  : border-box;
+    border: 10px solid red; 
+    /* box-sizing ini mengejar width yang sudah ditentukan, kl ndk ada, padding jadi nambah ke luar */
+    /* background-color: yellow; */
+}
+
+div.with-box-image {
+    margin-left: 50px;
+    width: 300px;
+    /* padding: 5px; */
+    /* box-sizing  : border-box; */
+    /* border: 10px solid red;  */
+    /* box-sizing ini mengejar width yang sudah ditentukan, kl ndk ada, padding jadi nambah ke luar */
+    /* background-color: yellow; */
+}
+
+div.case-calculate {
+    margin-left: 50px;
+    width: 300px;
+    padding: 50px;
+    border: 10px solid gray;
+    box-sizing: border-box;
+}
+
+img.case-calculate {
+    margin-left: 50px;
+    width: 300px;
+    height: 300px;
+    alt:"kalkulasi";
+}
+
+
+p.outline {
+    margin: 50px;
+    padding: 30px;
+    background-color: bisque;
+    border: 1px solid black;
+    outline: 1px solid rebeccapurple;
+    outline-offset: 20px;
+}
+
+div.max-width {
+    max-width: 750px;
+    border: 5px solid black;
+    padding: 10px;
+}
+
+div.no-max-width {
+    padding: 10px;
+    width: 750px;
+    border: 5px solid black;
+}
+
+div.static {
+    position: static;
+    left: 30px;
+    /* karena ini static maka left ini tidak berpengaruh; */
+    border: 5px solid black;
+}
+
+div.relative {
+    position: relative;
+    left: 30px;
+    border: 5px solid black;
+}
+
+div.parent-absolute {
+    position: relative;
+    left: 30px;
+    width: 700px;
+    height: 500px;
+    border: 5px solid black;
+}
+
+div.absolute {
+    position: absolute;
+    left: 30px;
+    /* width: 700px; */
+    /* height: 500px; */
+    top: 50px;
+    border: 5px solid black;
+}
+
+div.sticky {
+    max-width: 500px;
+    /* max-width ini harus muncul agar left bisa diatur, kalau tidak maka bablas dia akan mengambil semua lebar layar */
+    top: 0;
+    bottom: 100;
+    left: 250px;
+    /* tambahkan top dan bottom supaya posisinya ditentukan sticknya dimana */
+    position: sticky;
+    /* position: -webkit-sticky; */
+    left: 30px;
+    border: 5px solid black;
+}
+
+div.fixed {
+    position: fixed;
+    left: 30px;
+    bottom: 0;
+    right: 0;
+    border: 5px solid black;
+    background-color: aqua;
+}
+
+img.z-index {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+div.overflow {
+    background-color: blueviolet;
+    width: 50%;
+    height: 100px;
+    border: 1px solid greenyellow;
+    /* overflow: scroll; */
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+div.float1 {
+    background-color: yellow;
+    float: left;
+    padding: 15px;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+div.float2 {
+    background-color: red;
+    float: right;
+    padding: 15px;
+    width: 70%;
+    box-sizing: border-box;
+}
+
+div.float3 {
+    background-color: blue;
+    float: left;
+    padding: 10px;
+}
+
+
+div.fix-image {
+    background-color: whitesmoke;
+    overflow:auto;
+    padding: 15px;
+    border: 3px solid greenyellow;
+}
+
+img.float {
+    float: right;
+}

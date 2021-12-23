@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+
+
+    </head>
+    <body>
+        <form action="" oninput="countbar.value=parseInt(bar.value)">
+            <label>Full Name</label><br>
+            <input type="text" placeholder="nama lengkap" name="full-name"><br><br>
+            <label>E-Mail</label><br>
+            <input type="text" placeholder="mail@mail.com" name="email"><br><br>
+            <label>Jenis Kelamin</label><br>
+            <input type="radio" value="Laki-laki" name="gender">Laki-laki<br>
+            <input type="radio" value="Perempuan" name="gender">Perempuan<br><br>
+            <label>Hobi</label><br>
+            <input type="checkbox" name="hobi1" value="hobi1">Makan<br>
+            <input type="checkbox" name="hobi2" value="hobi2">Main<br>
+            <input type="checkbox" name="hobi3" value="hobi3">Tidur<br><br>
+            <label>Jenjang Pendidikan Terakhir</label><br>
+            <select name="study">
+                <option value="s1">S1</option>
+                <option value="s2">S2</option>
+                <option value="s2">S3</option>
+            </select>
+            <br><br>
+            <label>Jenjang Pendidikan Terakhir pilih banyak</label><br>
+            <select name="study" size="5" multiple>
+                <option value="s1">S1</option>
+                <option value="s2">S2</option>
+                <option value="s2">S3</option>
+            </select>
+
+            <br><br>
+            <label>Pendidikan Terakhir Input</label><br>
+            <input list="study-list">
+            <datalist id="study-list">
+                <option value="S1">S1</option>
+                <option value="S2">S2</option>
+                <option value="S3">S3</option>
+            </datalist>
+
+
+
+            <br><br>
+            <label>Deskripsi Diri</label><br>
+            <textarea name="deskripsi" rows="3" cols="50">
+                isian di sini
+            </textarea>
+            <br><br><br>
+            <label>Kalkulasi</label><br>
+            0
+            <input type="range" id=bar for="bar" value="50">
+            100
+            =
+            <output name="countbar" for="bar"></output>
+
+
+
+            <br><br><br>
+            <input type="button" value="submit">
+        </form>
+    </body>
+</html>
